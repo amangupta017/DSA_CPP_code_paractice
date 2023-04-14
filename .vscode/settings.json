@@ -3,6 +3,7 @@
         "*.css": "css",
         "iostream": "cpp",
         "__locale": "cpp",
-        "locale": "cpp"
+        "locale": "cpp",
+        "ostream": "cpp"
     }
 }
