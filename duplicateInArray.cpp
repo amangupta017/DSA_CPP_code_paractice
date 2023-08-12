@@ -8,7 +8,7 @@ class solution{
             vector<int> ans;
             int n=arr.size();
             for (int i =0;i<n;i++){
-                ans=ans^arr[i];
+                ans=(ans^arr[i]);
             }
             for(int i =1;i<n;i++){
                 ans=ans^i;
