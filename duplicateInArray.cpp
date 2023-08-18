@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+
+#include<bits/stdc++.h>
 using namespace std;
 class solution{
     public:
@@ -26,7 +26,7 @@ void printArray(vector<int> arr){
     cout<<"]"<<endl;
 }
 
-main(){
+int main(){
     solution ob;
     vector<int> a={1,4,3,3,5};
     printArray(ob.findDuplicate(a));
