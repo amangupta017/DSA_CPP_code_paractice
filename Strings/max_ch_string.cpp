@@ -31,5 +31,5 @@ int main(){
     string s;
     cin>>s;
     cout<<maxOccCharacter(s)<<endl;
-    
+
 }
