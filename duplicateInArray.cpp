@@ -1,33 +1,32 @@
-
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-class solution{
-    public:
 
-        vector<int> findDuplicate(vector<int> &arr){
-            vector<int> ans;
-            int n=arr.size();
-            for (int i =0;i<n;i++){
-                ans=(ans^arr[i]);
-            }
-            for(int i =1;i<n;i++){
-                ans=ans^i;
-                
-            }
-            return ans;
-        }
-};
+int findDuplicate(int arr[],int n){
 
-void printArray(vector<int> arr){
+    int ans=0;
+    for(int i=0; i<n;i++){
+        ans=ans^arr[i];
+    }    
+    for(int i=1; i<n; i++){
+        ans=ans^i;
+    }
+    return ans;
+
+}
+
+
+
+void printArray(int  arr[],int n){
     cout<<'[';
-    for (int i =0; i<arr.size();i++){
+    for (int i =0; i<n;i++){
         cout<<arr[i]<<',';
     }
     cout<<"]"<<endl;
 }
 
 int main(){
-    solution ob;
-    vector<int> a={1,4,3,3,5};
-    printArray(ob.findDuplicate(a));
+    int arr[5]={1,2,3,3,4};
+    printArray(arr,5);
+    findDuplicate(arr,5);
+    
 }
