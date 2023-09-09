@@ -3,6 +3,7 @@ using namespace std;
 
 bool binarySearch(int *arr, int s, int e, int k){
 
+    //base case
     if(s>e){
         return false;
 
